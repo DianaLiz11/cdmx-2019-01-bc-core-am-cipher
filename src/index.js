@@ -3,7 +3,7 @@
 document.getElementById('btnCifrar').addEventListener('click',() => {
   const cadenaParaCifrar = document.getElementById('txtCadena').value;
   const desplazamiento = document.getElementById('txtOffset').value;
-  const textoCodificado = window.cipher.encode(cadenaParaCifrar,desplazamiento);
+  const textoCodificado = window.cipher.encode(desplazamiento,cadenaParaCifrar);
   document.getElementById('pCodigo').innerHTML = `El texto codificado es: ${textoCodificado}`;
 });
 

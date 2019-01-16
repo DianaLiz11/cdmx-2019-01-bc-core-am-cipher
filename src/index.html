@@ -17,18 +17,23 @@
       </div>
       <div id="paginaCifrado" class="oculto">
         <h2>Cifrar</h2>
-          <label for="txtCadena">Ingresa la palabra que deseas codificar</label><br>
-          <input id="txtCadena" type="text" required></input>
-          <br><br>
-          <label for="txtOffset"> Ingresa el número de offset</label><br>
-          <input id="txtOffset" maxlength="3" required size="5"></input><br>
-          <br>
-          <button id="btnCifrar" >Cifrar texto</button><br>
-          <br>
-          <p id="pCodigo"></p><br>
-          <br>
-          <button id="btnRegresar">Regresar</button>
-        </div>
+        <label for="txtCadena">Ingresa la palabra que deseas codificar</label><br>
+        <input id="txtCadena" type="text">
+        <br><br>
+        <label for="txtOffset"> Ingresa el número de offset</label><br>
+        <input id="txtOffset" type="text" maxlength="3" size="5"><br>
+        <br>
+        <button id="btnCifrar" >Cifrar texto</button><br>
+        <br>
+        <p id="pCodigo"></p><br>
+        <br>
+        <button id="btnRegresar">Regresar</button>
+      </div>
+      <div id="paginaDescifrar">
+        <h2>Descifrar</h2>
+        <label>Ingresa el código que deseas descifrar</label><br>
+        <input id="txtCadenaCifrada">
+      </div>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

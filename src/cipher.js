@@ -1,6 +1,6 @@
 window.cipher = {
   // ...
-  encode:(cadena,offset) =>{
+  encode:(offset,cadena) =>{
     let cadenaCodificada="";
     for(let i=0; i< cadena.length; i++){
       let letraAscii = cadena.toUpperCase().charCodeAt(i);
@@ -9,17 +9,19 @@ window.cipher = {
       cadenaCodificada = cadenaCodificada.concat(letraEsp);
     }
     //alert("El valor de la cadena es: "+cadenaCodificada);
+
     return cadenaCodificada;
   },
 
-  decode:(codigo,offsetD)=>{
+  decode:(offsetD,cadenaCifrada)=>{
     let cadenaDecodificada="";
-    for(let i=0; i< codigo.length; i++){
-      let letraAsciiC = codigo.toUpperCase().charCodeAt(i);
-      let nuevaLetraAsciiC = (letraAsciiC - 65 - offsetD) % 26 + 65;
+    for(let i=0; i< cadenaCifrada.length; i++){
+      let letraAsciiC = cadenaCifrada.toUpperCase().charCodeAt(i);
+      let nuevaLetraAsciiC = (letraAsciiC -(parseInt(offsetD) % 26)-65) + 65;
       let letraEspC = String.fromCharCode(nuevaLetraAsciiC);
       cadenaDecodificada = cadenaDecodificada.concat(letraEspC);
     }
     return cadenaDecodificada;
   }
+
 };
