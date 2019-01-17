@@ -16,3 +16,20 @@ document.getElementById('btnRegresar').addEventListener('click',() => {
   document.getElementById('paginaPrincipal').style.display = 'block';
   document.getElementById('paginaCifrado').style.display = 'none';
 });
+
+document.getElementById('btnDescifrar').addEventListener('click',() => {
+  const cadenaParaDescifrar = document.getElementById('txtCadenaCifrada').value;
+  const desplazamientoDescifrar = document.getElementById('txtOffsetDescifrar').value;
+  const textoDecodificado = window.cipher.decode(desplazamientoDescifrar,cadenaParaDescifrar);
+  document.getElementById('pTextoDescifrado').innerHTML = `El texto decodificado es: ${textoDecodificado}`;
+});
+
+document.getElementById('btnCambiarADescifrar').addEventListener('click',() => {
+  document.getElementById('paginaPrincipal').style.display = 'none';
+  document.getElementById('paginaDescifrar').style.display = 'block';
+});
+
+document.getElementById('btnRegresarD').addEventListener('click',() => {
+  document.getElementById('paginaPrincipal').style.display = 'block';
+  document.getElementById('paginaDescifrar').style.display = 'none';
+});

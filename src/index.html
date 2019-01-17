@@ -21,7 +21,7 @@
         <input id="txtCadena" type="text">
         <br><br>
         <label for="txtOffset"> Ingresa el número de offset</label><br>
-        <input id="txtOffset" type="text" maxlength="3" size="5"><br>
+        <input id="txtOffset" type="number" size="5" min="1" max="9999"><br>
         <br>
         <button id="btnCifrar" >Cifrar texto</button><br>
         <br>
@@ -29,10 +29,20 @@
         <br>
         <button id="btnRegresar">Regresar</button>
       </div>
-      <div id="paginaDescifrar">
+      <div id="paginaDescifrar" class="oculto">
         <h2>Descifrar</h2>
-        <label>Ingresa el código que deseas descifrar</label><br>
-        <input id="txtCadenaCifrada">
+        <label for="txtCadenaCifrada">Ingresa el código que deseas descifrar</label><br>
+        <input id="txtCadenaCifrada" type="text">
+        <br><br>
+        <label>Ingresa el número de offset</label>
+        <br>
+        <input id="txtOffsetDescifrar" type="number" size="5" min="1" max="9999">
+        <br><br>
+        <button id="btnDescifrar">Descifrar texto</button>
+        <br><br>
+        <p id="pTextoDescifrado"></p>
+        <br><br>
+        <button id="btnRegresarD">Regresar</button>
       </div>
     </div>
     <script src="cipher.js"></script>
