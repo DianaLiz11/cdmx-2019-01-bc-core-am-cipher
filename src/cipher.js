@@ -10,7 +10,7 @@ window.cipher = {
     }
     return cadenaCodificada;
   },
-
+/*
   decode:(offsetD,cadenaCifrada)=>{
     let cadenaDecodificada="";
     let nuevaLetraAsciiC = "";
@@ -32,18 +32,16 @@ window.cipher = {
       cadenaDecodificada = cadenaDecodificada.concat(letraEspC);
     }
     return cadenaDecodificada;
-  }
-/*
+  }*/
+
   decode:(offsetD,cadenaCifrada)=>{
     let cadenaDecodificada="";
     for(let i=0; i< cadenaCifrada.length; i++){
       let letraAsciiC = cadenaCifrada.toUpperCase().charCodeAt(i);
       let nuevaLetraAsciiC = (letraAsciiC + 65 - parseInt(offsetD)) % 26 + 65;
-
       let letraEspC = String.fromCharCode(nuevaLetraAsciiC);
       cadenaDecodificada = cadenaDecodificada.concat(letraEspC);
     }
     return cadenaDecodificada;
   }
-*/
 };

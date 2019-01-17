@@ -7,42 +7,30 @@
   </head>
   <body>
     <div id="root">
-      <div id="paginaPrincipal">
+      <div id="ContenidoGeneral">
         <h1>Mensajeria Top Secret</h1>
         <p>Codifica o decodifica tus mensajes que contienen información sensible</p>
         <p>¿Qué deseas hacer?</p>
         <br>
-        <button id="btnCambiarACifrar">Cifrar</button>&nbsp;&nbsp;&nbsp;&nbsp;
-        <button id="btnCambiarADescifrar">Descifrar</button>
-      </div>
-      <div id="paginaCifrado" class="oculto">
-        <h2>Cifrar</h2>
-        <label for="txtCadena">Ingresa la palabra que deseas codificar</label><br>
-        <input id="txtCadena" type="text">
-        <br><br>
-        <label for="txtOffset"> Ingresa el número de offset</label><br>
-        <input id="txtOffset" type="number" size="5" min="1" max="9999"><br>
-        <br>
-        <button id="btnCifrar" >Cifrar texto</button><br>
-        <br>
-        <p id="pCodigo"></p><br>
-        <br>
-        <button id="btnRegresar">Regresar</button>
-      </div>
-      <div id="paginaDescifrar" class="oculto">
-        <h2>Descifrar</h2>
-        <label for="txtCadenaCifrada">Ingresa el código que deseas descifrar</label><br>
-        <input id="txtCadenaCifrada" type="text">
-        <br><br>
-        <label>Ingresa el número de offset</label>
-        <br>
-        <input id="txtOffsetDescifrar" type="number" size="5" min="1" max="9999">
-        <br><br>
-        <button id="btnDescifrar">Descifrar texto</button>
-        <br><br>
-        <p id="pTextoDescifrado"></p>
-        <br><br>
-        <button id="btnRegresarD">Regresar</button>
+        <div id="Formulario">
+          <h2>Cifrar/Descifrar</h2>
+          <form>
+            <label for="txtCadena">Ingresa el texto que deseas convertir</label><br>
+            <textarea id="txtCadena" rows="5" cols="40" requiered></textarea>
+            <br><br>
+            <label for="txtOffset"> Ingresa el número de offset</label><br>
+            <input id="txtOffset" type="number" size="5" min="1" max="9999" requiered><br>
+            <br>
+            <input type="button" id="btnCifrar" value="Cifrar"> &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="button" id="btnDescifrar" value="Descifrar">
+            <br>
+            <br>
+            <p id="pCadenaConvertida"></p>
+            <br>
+            <br>
+            <input type="reset" id="btnLimpiar" value="Limpiar">
+          </form>
+        </div>
       </div>
     </div>
     <script src="cipher.js"></script>
