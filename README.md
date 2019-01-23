@@ -1,3 +1,21 @@
+# InfoCipher
+
+La información siempre ha sido un elemento muy importante, sin embargo en lo últimos tiempos, dados los avances tecnologicos, además de otros factores, ha surgido una necesidad de proteger la información, y para cubrir dicha necesidad se ha desarrollado InfoCipher.
+
+InfoCipher es una página Web que codifica y decodifica el texto que el usuario ingresa utlizando una técnica denominada "Cifrado Cesar".
+
+La página de InfoCipher es muy fácil de utilizar, el usuario solo debe ingresar a la liga de InfoCipher, donde aparecerá un recuadro en el que el usuario  puede ingresar el texto que desea codificar o decodificar junto con un número que será la clave para realizar el cifrado o descifrado, después el usuario deberá dar clic en el botón que indique la acción a realizar, los botones son Cifrar o Descifrar.
+
+## Definición
+
+InfoCipher esta enfocada para el personal de empresas que diariamente envían y/o reciben información confidencial a través de medios como el correo electrónico, donde es susceptible a ser robada y utlizada con fines no éticos.
+
+La finalidad es que las personas pueden entrar a InfoCipher y codificar su información para después transmitirla, de esta forma si alguien la intercepta al no tener la clave no podra interpretarla, dando así seguridad y protección a la información sensible que se maneja en la empresas.  
+
+
+
+
+
 # Cifrado César
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
@@ -210,7 +228,7 @@ para ver la descripción detallada de cada _habilidad_ y cada _nivel_. Esta es u
 ## Pistas sobre cómo comenzar a trabajar en el proyecto
 
 1. Antes que nada, asegúrate de tener un :pencil: editor de texto en
-   condiciones, algo como [Atom](https://atom.io/), 
+   condiciones, algo como [Atom](https://atom.io/),
    [Visual Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com) o cualquier otro de tu preferencia.
 2. Para ejecutar los comandos a continuación necesitarás una :shell:
    [UNIX Shell](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/shell),
@@ -221,7 +239,7 @@ para ver la descripción detallada de cada _habilidad_ y cada _nivel_. Esta es u
    también). Si usas Windows puedes usar [Git bash](https://git-scm.com/download/win),
    aunque recomendaría que consideres probar :penguin: GNU/Linux como tu Sistema Operativo.
 3. Haz tu propio :fork_and_knife: [fork](https://help.github.com/articles/fork-a-repo/)
-   de [ este repositorio](https://github.com/Laboratoria/cdmx-2019-01-bc-core-am-cipher) de tu cohort, tus _coaches_ te compartirán un _link_ a un repositorio y te 
+   de [ este repositorio](https://github.com/Laboratoria/cdmx-2019-01-bc-core-am-cipher) de tu cohort, tus _coaches_ te compartirán un _link_ a un repositorio y te
    darán acceso de lectura en ese repo.
 4. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
    tu _fork_ a tu computadora (copia local).
@@ -291,4 +309,3 @@ Esta sección está  para ayudarte a llevar un control de lo que vas completando
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
 * [ ] Permite usar un `offset` negativo.
 * [ ] Modelo de negocio.
-
