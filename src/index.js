@@ -9,5 +9,5 @@ document.getElementById('btnDescifrar').addEventListener('click',() => {
   const cadenaParaDescifrar = document.getElementById('txtCadena').value;
   const desplazamientoDescifrar = document.getElementById('txtOffset').value;
   const textoDecodificado = window.cipher.decode(desplazamientoDescifrar,cadenaParaDescifrar);
-  document.getElementById('pCadenaConvertida').innerHTML = `El texto decodificado es: ${textoDecodificado}`;
+  document.getElementById('pCadenaConvertida').innerHTML = textoDecodificado;
 });

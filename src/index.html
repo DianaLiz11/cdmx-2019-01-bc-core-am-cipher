@@ -4,33 +4,53 @@
     <meta charset="utf-8">
     <title>Cesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono:700" rel="stylesheet">
   </head>
   <body>
     <div id="root">
-      <div id="ContenidoGeneral">
-        <h1>Mensajeria Top Secret</h1>
-        <p>Codifica o decodifica tus mensajes que contienen información sensible</p>
-        <p>¿Qué deseas hacer?</p>
-        <br>
-        <div id="Formulario">
-          <h2>Cifrar/Descifrar</h2>
-          <form>
-            <label for="txtCadena">Ingresa el texto que deseas convertir</label><br>
-            <textarea id="txtCadena" rows="5" cols="40" requiered></textarea>
-            <br><br>
-            <label for="txtOffset"> Ingresa el número de offset</label><br>
-            <input id="txtOffset" type="number" size="5" min="1" max="9999" requiered><br>
-            <br>
-            <input type="button" id="btnCifrar" value="Cifrar"> &nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="button" id="btnDescifrar" value="Descifrar">
-            <br>
-            <br>
-            <p id="pCadenaConvertida"></p>
-            <br>
-            <br>
-            <input type="reset" id="btnLimpiar" value="Limpiar">
-          </form>
+      <div id="encabezado">
+        <h1>InfoCipher</h1>
+        <h3>Esta página te permite codificar o decodificar tu información sensible a través de una técnica denominada cifrado Cesar.</h3>
+      </div>
+      <div id="instrucciones">
+        <div id="instrucciones1" class="lateral">
+
         </div>
+        <div id="instrucciones2" class="centro">
+          <p>Para cifrar o descifrar tu información solo sigue los pasos siguientes:</p>
+          <ul>
+            <li>Ingresa un número que sera la clave para el cifrado o descifrado de tu texto</li>
+            <li>Ingresa el texto en el recuadro del lado izquierdo de tu pantalla</li>
+            <li>Da clic en el botón Cifrar o Descifrar, dependiendo de la opción deseada</li>
+            <li>El resultado lo obtendras en el recuadro ubicado del lado derecho de tu pantalla</li>
+          </ul>
+        </div>
+        <div id="instrucciones3" class="lateral">
+
+        </div>
+      </div>
+      <div id="formulario">
+        <form>
+          <div class="formlaterales">
+            <div id="izquierda">
+              <label for="txtOffset"> Ingresa la clave de tu código</label><br>
+              <input id="txtOffset" type="number" size="5" min="1" max="9999" class="colorFondo" requiered>
+              <br>
+              <br>
+              <label for="txtCadena">Ingresa el texto que deseas convertir</label><br>
+              <textarea id="txtCadena" rows="10" cols="40" class="colorFondo" requiered></textarea>
+            </div>
+            <div id="derecha">
+              <label for="pCadenaConvertida">El resultado es:</label><br>
+              <textarea id="pCadenaConvertida" rows="10" cols="40" class="colorFondo"></textarea>
+            </div>
+          </div>
+          <div id="botones">
+            <input type="button" id="btnCifrar" value="Cifrar" class="boton"> &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="button" id="btnDescifrar" value="Descifrar" class="boton"> &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" id="btnLimpiar" value="Limpiar" class="boton">
+          </div>
+        </form>
       </div>
     </div>
     <script src="cipher.js"></script>
