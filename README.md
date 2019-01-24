@@ -1,16 +1,92 @@
 # InfoCipher
 
-La información siempre ha sido un elemento muy importante, sin embargo en lo últimos tiempos, dados los avances tecnologicos, además de otros factores, ha surgido una necesidad de proteger la información, y para cubrir dicha necesidad se ha desarrollado InfoCipher.
+InfoCipher es una página Web que permite realizar el cifrado y  descifrado de un texto, esta enfocada al mundo laboral donde se requiere transmitir información, la cual en muchas ocasiones es informacón sensible, derivado de ello, InfoCipher te permite codificar dicha información sensible para poder enviarla a su destinatario sin temor de que ésta pueda ser robada y hacer mal uso de la misma.
 
-InfoCipher es una página Web que codifica y decodifica el texto que el usuario ingresa utlizando una técnica denominada "Cifrado Cesar".
+La información cifrada se acompaña de un número clave que funciona como la llave para descifrar el texto, utilizando esta misma página Web de InfoCipher.
+
+En InfoCipher funciona utilizando una técnica llamada [Cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher), la cual consiste en desplazar las letras de acuerdo a un número determinado que es proporcionado por el usuario.
+
+![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
+
+Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
+
+- La letra A se cifra como D.
+- La palabra CASA se cifra como FDVD.
+- Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+- Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+
+## ¿Como funciona?
 
 La página de InfoCipher es muy fácil de utilizar, el usuario solo debe ingresar a la liga de InfoCipher, donde aparecerá un recuadro en el que el usuario  puede ingresar el texto que desea codificar o decodificar junto con un número que será la clave para realizar el cifrado o descifrado, después el usuario deberá dar clic en el botón que indique la acción a realizar, los botones son Cifrar o Descifrar.
 
-## Definición
+Cabe destacar que InfoCipher te permite realizar el cifrado y descifrado de un texto el cual puede contener letras mayúsculas, minúsculas y caracteres especiales.
 
-InfoCipher esta enfocada para el personal de empresas que diariamente envían y/o reciben información confidencial a través de medios como el correo electrónico, donde es susceptible a ser robada y utlizada con fines no éticos.
+## Proceso de UX
 
-La finalidad es que las personas pueden entrar a InfoCipher y codificar su información para después transmitirla, de esta forma si alguien la intercepta al no tener la clave no podra interpretarla, dando así seguridad y protección a la información sensible que se maneja en la empresas.  
+Para mayor información del proceso de UX clic [aquí](https://docs.google.com/document/d/10l4vcbH8eh3ed5InHx2m892blaJNpmXEwaVNpoVRGho/edit?usp=sharing).
+
+## Comenzando
+
+Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
+
+### Pre-requisitos
+
+Antes de instalar este proyecto se requiere tener instalado lo siguiente:
+
+  1. Tener un :pencil: editor de texto en condiciones, algo como [Atom](https://atom.io/),
+     [Visual Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com) o cualquier otro de tu preferencia.
+  2. Para ejecutar los comandos a continuación necesitarás una :shell:
+     [UNIX Shell](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/shell),
+     que es un programita que interpreta líneas de comando (command-line
+     interpreter) así como tener [git](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/scm/01-git)
+     instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS,
+     ya tienes una _shell_ (terminal) instalada por defecto (y probablemente `git`
+     también). Si usas Windows puedes usar [Git bash](https://git-scm.com/download/win),
+     aunque recomendaría que consideres probar :penguin: GNU/Linux como tu Sistema Operativo.
+  4. Instalar [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
+
+### Instalación
+
+   1. Haz tu propio :fork_and_knife: [fork](https://help.github.com/articles/fork-a-repo/)
+      de [ este repositorio](https://github.com/DianaLiz11/cdmx-2019-01-bc-core-am-cipher).
+   2. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
+      tu _fork_ a tu computadora (copia local).
+   3. 📦 Instala las dependencias del proyecto con el comando `npm
+      install`.
+
+## Pruebas
+
+Si la instalación se realizó correctamente, debes poder ejecutar las :traffic_light: pruebas unitarias (unit tests) con el comando `npm run test`.
+
+Para ejecutar las pruebas solo debes ubicarte en la carpeta donde se encuentra tu proyecto desde l terminal y ejecutar el comando `npm run test`, el cuál mostrará una pantalla con el resultado de las pruebas.
+
+Este proyecto tiene configurada las pruebas para evaluar lo siguiente:
+
+- Que el proyecto tenga un objeto llamado `cipher`.
+- El objeto cipher debe tener dos funciones: `encode` y `decode`.
+- Las funciones enconde y decode deben aceptar letras mayúsculas, minúsculas y caracteres especiales.
+
+## Deployment
+
+El proyecto InfoCipher lo puedes ver desde esta [liga](https://dianaliz11.github.io/cdmx-2019-01-bc-core-am-cipher/src/).
+
+## Construido con
+
+Para el desarrollo de este proyecto se utilizó:
+
+- [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
+- [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e).
+
+## Autores
+
+Este proyecto forma parte del equipo de Laboratoria y es concluido por Diana Lizbeth Muñoz Pérez, estudiante de Laboratoria 7a Generación.
+
+
+
+
+
+
 
 
 

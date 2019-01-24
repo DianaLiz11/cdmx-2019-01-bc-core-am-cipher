@@ -1,18 +1,25 @@
 body {
-  background: #66B9BF;
+  background-image: url('./images/computer.png');
 }
 
 div {
-  padding: 1em 2em;
-  /*border: 1px solid black;*/
+  padding: 10px 20px;
 }
 
 h1 {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Londrina Shadow', cursive;
+  background-color: #E37222;
+  border-radius: 10px;
+  color: white;
+  font-size: 72px
 }
 
 h3{
   font-family: 'Lato', sans-serif;
+}
+
+h3>span{
+  background-color: #F5F5F5;
 }
 
 p,ul,label{
@@ -22,14 +29,9 @@ p,ul,label{
 .colorFondo{
   background-color: #CCCCCC;
 }
+
 #root{
   text-align: center;
-}
-
-#encabezado{
-  background-color: #E37222;
-  border-radius: 10px;
-  color: white;
 }
 
 #instrucciones{
@@ -42,7 +44,7 @@ p,ul,label{
 }
 
 #derecha{
-    padding-top: 5em;
+    padding-top: 70px;
 }
 
 .formlaterales{
@@ -54,16 +56,16 @@ p,ul,label{
 }
 
 .formlaterales > div{
-  width: 43%
+  width: 45%
 
 }
 
 .lateral{
-  width: 15%;
+  width: 22%;
 }
 
 .centro{
-  width: 70%;
+  width: 56%;
   background-color: #EEAA7B;
   border-radius: 10px;
 }
